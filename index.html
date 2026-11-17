@@ -76,7 +76,7 @@
   .fv__lead{display:flex;justify-content:center;gap:6px;font-weight:700;font-size:13px;color:var(--mute);margin:0}
   .fv__ttl{margin:12px 0 0;font-weight:900;font-size:38px;line-height:1.3;letter-spacing:.02em}
   .fv__ttl .q{font-size:56px;line-height:1.15}
-  .fv__vis{position:relative;display:flex;align-items:flex-end;margin-top:14px;min-height:250px}
+  .fv__vis{position:relative;display:flex;align-items:flex-end;margin-top:18px;aspect-ratio:5/4}
   .fv__photo{position:absolute;left:-6px;bottom:0;width:58%}
   .fv__ring{position:absolute;left:4%;top:-4%;width:84%;aspect-ratio:1/1;border-radius:50%;border:2px dashed rgba(27,30,39,.25);animation:spin 40s linear infinite}
   @keyframes spin{to{transform:rotate(360deg)}}
@@ -111,7 +111,7 @@
   .stats b .en{font-size:26px;margin-right:1px}
   
   /* ===== buttons ===== */
-  .cta{padding:20px 16px 28px;display:flex;flex-direction:column;gap:14px}
+  .cta{padding:16px 16px 22px;display:flex;flex-direction:column;gap:14px}
   .cta__note{margin:0;text-align:center;font-size:11px;color:var(--mute)}
   .btn{position:relative;display:flex;align-items:center;justify-content:center;gap:10px;min-height:66px;padding:10px 48px 10px 22px;border-radius:999px;text-decoration:none;font-weight:900;font-size:18px;line-height:1.3;letter-spacing:.03em;overflow:hidden;isolation:isolate;transition:transform .18s,box-shadow .18s;color:#fff}
   .btn:hover{transform:translateY(-2px);color:#fff}
@@ -133,7 +133,7 @@
   .band i{font-style:normal;font-size:12px;align-self:center}
   
   /* ===== sections ===== */
-  .sec{padding:56px 20px}
+  .sec{padding:40px 20px}
   .sec-hd{text-align:center}
   .sec-hd__en{display:inline-flex;align-items:center;gap:10px;font-family:var(--f-en);font-style:italic;font-weight:900;font-size:12px;letter-spacing:.14em;color:var(--pink)}
   .sec-hd__en::before,.sec-hd__en::after{content:"";width:18px;height:2px;background:currentColor}
@@ -145,21 +145,21 @@
   .sec--dark .sec-hd__sub{color:#DDEDE4}
   
   /* habit / promise */
-  .promise{padding:44px 20px;border-top:1px dashed rgba(27,30,39,.22)}
+  .promise{padding:30px 20px;border-top:1px dashed rgba(27,30,39,.22)}
   .promise__no{display:flex;align-items:flex-end;justify-content:center;gap:12px;line-height:.9;margin:0}
   .promise__no small{font-size:18px;padding-bottom:10px}
-  .promise__no b{font-size:88px}
-  .habit{position:relative;margin:26px 8px 0;border:2px solid var(--ink);border-radius:16px;background:var(--paper);padding:24px 14px 18px;text-align:center;font-weight:900;font-size:18px;line-height:1.6;box-shadow:0 6px 0 rgba(27,30,39,.08)}
+  .promise__no b{font-size:76px}
+  .habit{position:relative;margin:18px 8px 0;border:2px solid var(--ink);border-radius:16px;background:var(--paper);padding:24px 14px 18px;text-align:center;font-weight:900;font-size:18px;line-height:1.6;box-shadow:0 6px 0 rgba(27,30,39,.08)}
   .habit__lbl{position:absolute;top:-10px;left:50%;transform:translateX(-50%);background:var(--paper);padding:0 10px;font-family:var(--f-en);font-style:italic;font-weight:900;font-size:11px;letter-spacing:.14em;color:var(--mute);white-space:nowrap;line-height:1.6}
-  .arrow{display:flex;flex-direction:column;align-items:center;margin:14px 0 10px}
-  .arrow::before{content:"";width:0;height:44px;border-left:2.5px dashed var(--ink)}
+  .arrow{display:flex;flex-direction:column;align-items:center;margin:10px 0 8px}
+  .arrow::before{content:"";width:0;height:30px;border-left:2.5px dashed var(--ink)}
   .arrow::after{content:"";width:0;height:0;border-left:7px solid transparent;border-right:7px solid transparent;border-top:11px solid var(--ink)}
   .dakara{display:table;margin:0 auto;background:var(--grad);color:#fff;font-weight:900;font-size:17px;padding:6px 22px;border-radius:999px;letter-spacing:.06em}
-  .ink-ttl{display:flex;flex-direction:column;align-items:center;gap:10px;margin:18px 0 0}
+  .ink-ttl{display:flex;flex-direction:column;align-items:center;gap:8px;margin:14px 0 0}
   .ink-ttl span{display:inline-block;background:var(--green);color:#fff;font-weight:900;font-size:26px;line-height:1.4;padding:6px 14px}
   .ink-ttl em{font-style:normal;color:var(--pink-l)}
-  .promise .win{margin-top:22px}
-  .promise__body{margin:20px 4px 0;font-size:15px;line-height:2}
+  .promise .win{margin-top:16px}
+  .promise__body{margin:14px 4px 0;font-size:15px;line-height:1.85}
   
   /* mock: calendar */
   .cal{display:grid;grid-template-columns:repeat(8,minmax(0,1fr));gap:5px}
@@ -194,7 +194,7 @@
   .msg--r p{border-radius:14px 14px 4px 14px}
   
   /* ===== slider / cards ===== */
-  .slider{display:flex;gap:14px;overflow-x:auto;scroll-snap-type:x mandatory;padding:20px 20px 10px;scrollbar-width:none}
+  .slider{display:flex;gap:14px;overflow-x:auto;scroll-snap-type:x mandatory;padding:16px 20px 8px;scrollbar-width:none}
   .slider::-webkit-scrollbar{display:none}
   .slider:focus-visible{outline:3px solid var(--pink);outline-offset:-3px}
   .pcard{flex:0 0 72%;scroll-snap-align:center;border:2px solid var(--ink);border-radius:16px;overflow:hidden;background:var(--paper);box-shadow:0 8px 20px rgba(27,30,39,.12);margin:0}
@@ -218,7 +218,7 @@
   .tbd{display:inline-block;margin:12px 14px 16px;font-family:var(--f-mono);font-size:10px;font-weight:700;color:#8A2E00;background:#FFE7C2;padding:2px 8px;border-radius:4px}
   
   /* parents */
-  .plist{list-style:none;margin:26px 0 0;padding:0;display:flex;flex-direction:column;gap:10px}
+  .plist{list-style:none;margin:20px 0 0;padding:0;display:flex;flex-direction:column;gap:10px}
   .plist li{display:flex;gap:14px;border:1.5px solid rgba(255,255,255,.22);border-radius:14px;padding:16px;background:rgba(255,255,255,.04)}
   .pico{flex:0 0 44px;height:44px;border-radius:12px;background:rgba(255,255,255,.12);border:1.5px solid rgba(255,255,255,.25);display:grid;place-items:center}
   .plist .mono{flex:0 0 auto;color:var(--pink-l);font-weight:700;font-size:13px;padding-top:3px}
@@ -226,7 +226,7 @@
   .plist p{margin:4px 0 0;font-size:14px;color:#E3EFE8;line-height:1.75}
   
   /* price */
-  .price{position:relative;margin-top:26px;border:2px solid var(--ink);border-radius:18px;background:var(--paper);padding:24px 18px;box-shadow:0 6px 0 var(--ink)}
+  .price{position:relative;margin-top:20px;border:2px solid var(--ink);border-radius:18px;background:var(--paper);padding:24px 18px;box-shadow:0 6px 0 var(--ink)}
   .price__lbl{margin:0;font-size:13px;font-weight:900;color:var(--mute)}
   .price__num{margin:4px 0 0;font-weight:900;font-size:38px;line-height:1.2}
   .price__sub{margin:6px 0 0;font-size:12px;color:var(--mute)}
@@ -236,7 +236,7 @@
   .pay li{border:2px solid var(--ink);border-radius:10px;padding:5px 12px;font-weight:900;font-size:13px;background:var(--paper)}
   
   /* flow */
-  .flow{list-style:none;margin:28px 0 0;padding:0;position:relative;display:flex;flex-direction:column;gap:16px}
+  .flow{list-style:none;margin:20px 0 0;padding:0;position:relative;display:flex;flex-direction:column;gap:12px}
   .flow::before{content:"";position:absolute;left:21px;top:10px;bottom:10px;width:2px;background:var(--ink);opacity:.25}
   .flow li{display:flex;gap:12px;position:relative}
   .flow__no{flex:0 0 44px;height:44px;border:2px solid var(--ink);border-radius:10px;background:var(--paper);display:grid;place-items:center;font-size:17px}
@@ -244,18 +244,18 @@
   .flow__card{flex:1 1 auto;border:2px solid var(--ink);border-radius:14px;background:var(--paper);padding:12px 14px}
   .flow__card h3{margin:0;font-size:16px;font-weight:900}
   .flow__card p{margin:4px 0 0;font-size:13.5px;color:#3D3A44;line-height:1.75}
-  .need{margin-top:22px;border:2px solid var(--ink);border-radius:14px;background:var(--paper);padding:12px 16px}
+  .need{margin-top:16px;border:2px solid var(--ink);border-radius:14px;background:var(--paper);padding:12px 16px}
   .need summary{cursor:pointer;font-weight:900;font-size:14px}
   
   /* access */
-  .acc{display:flex;flex-direction:column;gap:16px;margin-top:26px}
+  .acc{display:flex;flex-direction:column;gap:12px;margin-top:20px}
   .acc .ph{aspect-ratio:12/7}
   .acc h3{margin:0;font-size:18px;font-weight:900}
   .acc p{margin:4px 0 0;font-size:14px;color:#3D3A44}
   .acc a{display:inline-block;margin-top:8px;font-family:var(--f-mono);font-weight:700;font-size:15px}
   
   /* faq */
-  .faq{display:flex;flex-direction:column;gap:10px;margin-top:24px}
+  .faq{display:flex;flex-direction:column;gap:8px;margin-top:18px}
   .faq__item{border:2px solid var(--ink);border-radius:14px;background:var(--paper);overflow:hidden}
   .faq__q{list-style:none;box-sizing:border-box;display:flex;gap:10px;align-items:flex-start;width:100%;padding:15px 14px;cursor:pointer;font-weight:900;font-size:15px;line-height:1.6}
   .faq__q:focus-visible{outline:3px solid var(--pink);outline-offset:-3px}
@@ -380,7 +380,7 @@ function imgNext(el){var x=['webp','jpg','png','jpeg','JPG','PNG'];var i=(+el.da
     <span class="sec-hd__en">YOUR VOICE</span>
     <h2 id="h-emp" class="sec-hd__ttl wb">こんなこと、<br>思ってない？</h2>
   </div>
-  <div class="win" style="margin-top:24px">
+  <div class="win" style="margin-top:18px">
     <div class="win__bar"><span class="dots" aria-hidden="true"><i></i><i></i><i></i></span>3年2組_グループ</div>
     <div class="win__body">
       <div class="msg"><span class="ava" style="background:#FFD84A" aria-hidden="true"></span><p>卒業までに免許取れるかな…</p></div>
@@ -399,7 +399,7 @@ function imgNext(el){var x=['webp','jpg','png','jpeg','JPG','PNG'];var i=(+el.da
 </div>
 
 <!-- ===== 03 ABOUT ===== -->
-<section id="s-about" data-idx="1" style="padding:52px 0 40px" aria-labelledby="h-about">
+<section id="s-about" data-idx="1" style="padding:40px 0 28px" aria-labelledby="h-about">
   <div class="sec-hd" style="padding:0 20px">
     <span class="sec-hd__en">ABOUT</span>
     <h2 id="h-about" class="sec-hd__ttl wb">三陽って、<br>こんなところ。</h2>
@@ -436,7 +436,7 @@ function imgNext(el){var x=['webp','jpg','png','jpeg','JPG','PNG'];var i=(+el.da
 
 <!-- ===== 04 REASONS (PROMISE style) ===== -->
 <section id="s-reason" data-idx="2" aria-labelledby="h-reason">
-  <div class="sec-hd" style="padding:40px 20px 8px">
+  <div class="sec-hd" style="padding:32px 20px 4px">
     <span class="sec-hd__en">WHY SANYO</span>
     <h2 id="h-reason" class="sec-hd__ttl wb">三陽が選ばれる<br>3つの理由</h2>
   </div>
@@ -507,7 +507,7 @@ function imgNext(el){var x=['webp','jpg','png','jpeg','JPG','PNG'];var i=(+el.da
 </div>
 
 <!-- ===== 05 VOICE ===== -->
-<section id="s-voice" data-idx="3" style="padding:52px 0 40px" aria-labelledby="h-voice">
+<section id="s-voice" data-idx="3" style="padding:40px 0 28px" aria-labelledby="h-voice">
   <div class="sec-hd" style="padding:0 20px">
     <span class="sec-hd__en">VOICE</span>
     <h2 id="h-voice" class="sec-hd__ttl">先輩たちの声</h2>
@@ -543,7 +543,7 @@ function imgNext(el){var x=['webp','jpg','png','jpeg','JPG','PNG'];var i=(+el.da
     <li><span class="pico" aria-hidden="true"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#FFD84A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="2" width="12" height="20" rx="2"/><path d="M10 18h4M9 8h6M9 11h4"/></svg></span><div><h3>進み具合がスマホで見える</h3><p>デジタル教習原簿（D-sma）で、教習の進み具合をいつでも確認できます。</p></div></li>
     <li><span class="pico" aria-hidden="true"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#FFD84A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20M6 15h4"/></svg></span><div><h3>費用は分割もOK</h3><p>お得な学生料金あり。ローンは最長36回（20歳未満・学生の方は親権者の確認が必要です）。</p></div></li>
   </ul>
-  <div class="cta" style="padding:28px 0 0">
+  <div class="cta" style="padding:20px 0 0">
     <a href="https://lin.ee/aBFBJeg" class="btn btn--line"><span class="btn__txt"><small>保護者の方もOK</small>LINEで費用を相談する</span><span class="btn__arrow" aria-hidden="true"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg></span></a>
   </div>
 </section>
@@ -563,9 +563,9 @@ function imgNext(el){var x=['webp','jpg','png','jpeg','JPG','PNG'];var i=(+el.da
       <p style="margin:4px 0 0;font-size:13.5px;color:#3D3A44">[特典の内容]　[期限：◯月◯日まで]</p>
     </div>
   </div>
-  <p style="margin:26px 0 0;font-weight:900;font-size:14px">お支払い方法</p>
+  <p style="margin:20px 0 0;font-weight:900;font-size:14px">お支払い方法</p>
   <ul class="pay"><li>現金</li><li>お振込</li><li>クレジットカード</li><li>ローン 最長36回</li></ul>
-  <div class="cta" style="padding:28px 0 0">
+  <div class="cta" style="padding:20px 0 0">
     <a href="https://lin.ee/aBFBJeg" class="btn btn--line"><span class="btn__txt"><small>キャンペーン込みの金額を返信</small>あなたの金額をLINEで</span><span class="btn__arrow" aria-hidden="true"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg></span></a>
   </div>
 </section>
@@ -663,7 +663,7 @@ function imgNext(el){var x=['webp','jpg','png','jpeg','JPG','PNG'];var i=(+el.da
 </section>
 
 <!-- ===== 11 CLOSE ===== -->
-<section id="s-contact" data-idx="9" style="padding:8px 12px 48px" aria-labelledby="h-close">
+<section id="s-contact" data-idx="9" style="padding:8px 12px 36px" aria-labelledby="h-close">
   <div class="close">
     <p class="close__lead">11月〜3月は、一年でいちばん混み合う時期。</p>
     <h2 id="h-close" class="close__ttl wb">予約は<em>早め</em>が、<br>正解です。</h2>
