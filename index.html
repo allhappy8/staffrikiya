@@ -316,7 +316,7 @@ background-image:linear-gradient(to right,var(--line) 1px,transparent 1px),linea
 /* 画像は .webp → .jpg → .png → .jpeg → .JPG → .PNG の順に探し、どれも無ければ「写真差し替え」表示のまま */
 function imgNext(el){var x=['webp','jpg','png','jpeg','JPG','PNG'];var i=(+el.dataset.i||0)+1;if(i>=x.length){el.remove();return;}el.dataset.i=i;el.src=el.src.replace(/\.[A-Za-z]+$/,'.'+x[i]);}
 </script>
-</head>
+<script src="https://track.zanmai-time.com/t.js?school=sanyo&ev=lp_view" async></script></head>
 <body>
 <div class="shell">
 
@@ -683,5 +683,5 @@ function imgNext(el){var x=['webp','jpg','png','jpeg','JPG','PNG'];var i=(+el.da
   } catch (e) {}
 })();
 </script>
-</body>
+<script>document.addEventListener("click",function(e){var a=e.target.closest&&e.target.closest('a[href*="works.do"]');if(!a)return;window.igcvq=window.igcvq||[];igcvq.push(["conversion",{type:"line"}]);},true);</script></body>
 </html>
